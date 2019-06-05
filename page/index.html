@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="game">
+        <h1 class="heading-primary u-margin-bottom-medium">誰是臥底</h1>
+        <div class="container">
+            <div class="group">
+                <h2 class="heading-secondary u-margin-bottom-small">玩家人數</h2>
+                <input type="range" name="gamers" id="gamers" min="4" max="15" value="6" step="1" class="range range-gamers">
+                <span class="range-value"></span>
+            </div>
+            <div class="group group-two-col">
+                <h2 class="heading-secondary u-margin-bottom-small">臥底人數</h2>
+                <input type="range" name="bad" id="bad" min="1" max="3" value="2" step="1"
+                    class=" range range-bad range-two-col">
+                <span class="range-value"></span>
+
+            </div>
+            <div class="group group-two-col">
+                <h2 class="heading-secondary u-margin-bottom-small">白板</h2>
+                <input type="range" name="white" id="bad" min="0" max="1" value="0" step="1"
+                    class="range range-bad range-two-col">
+                <span class="range-value"></span>
+            </div>
+        </div>
+        <div class="button-group">
+            <a href="#answer" class="button">確認</a>
+        </div>
+    </div>
+    <script src="/app/jquery.min.js"></script>
+    <script src="/app/app.js"></script>
+</body>
+
+</html>

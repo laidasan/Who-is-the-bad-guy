@@ -1,0 +1,38 @@
+input[type="range"] {
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    left: 10px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 12px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        margin:auto;
+        background: #edc;
+    }
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $color-light;
+    }
+}
+.range {
+    
+    &-gamers {
+        width: 210px;
+    }
+
+    &-bad {
+        width: 60px;
+    }
+}

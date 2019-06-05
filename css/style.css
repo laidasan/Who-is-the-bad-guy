@@ -1,0 +1,148 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  height: 100vh;
+  padding: 30px;
+  background-color: #2d132c; }
+
+.heading-primary {
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 1em; }
+
+.heading-secondary {
+  font-size: 3.3rem;
+  font-weight: 600;
+  letter-spacing: 3px; }
+
+.player-ans {
+  font-size: 9rem;
+  letter-spacing: 1px; }
+
+.player-info {
+  font-size: 1.5rem;
+  letter-spacing: 1.2px; }
+
+.range-value {
+  font-size: 2.1rem;
+  color: #fff; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 2.4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 3.6rem; }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: none;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  left: 10px; }
+  input[type="range"]::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 12px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: auto;
+    background: #edc; }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ee4540; }
+
+.range-gamers {
+  width: 210px; }
+
+.range-bad {
+  width: 60px; }
+
+.button:link, .button:visited {
+  display: inline-block;
+  padding: 1.2rem 3.6rem;
+  box-shadow: 0 0 0 3px #801335;
+  border-radius: 12px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 3px; }
+
+.game {
+  text-align: center;
+  margin-top: 3rem;
+  color: #ffffff; }
+  .game .container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; }
+  .game .group {
+    font-size: 0;
+    padding: 1.2rem 0; }
+    .game .group-two-col h2 {
+      display: inline-block; }
+    .game .group-two-col .range-two-col {
+      display: inline-block; }
+    .game .group .range-value {
+      display: inline-block;
+      position: relative;
+      left: 15px;
+      width: 30px; }
+  .game .wrap {
+    display: inline-block;
+    position: relative;
+    left: -21px; }
+    .game .wrap .radio-label {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -30px;
+      margin: auto; }
+    .game .wrap .radio-button {
+      opacity: 0;
+      visibility: hidden;
+      display: none; }
+    .game .wrap .radio-text {
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 45px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s; }
+      .game .wrap .radio-text-2 {
+        top: 75px; }
+    .game .wrap .radio-custom:checked + .custom {
+      background-color: #ee4540; }
+    .game .wrap .radio-default:checked + .default {
+      background-color: #ee4540; }
+    .game .wrap .radio-custom:checked ~ .radio-text {
+      opacity: 1;
+      visibility: visible; }
+  .game .player-wrap .player {
+    display: inline-block;
+    width: 450px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px #801335;
+    font-size: 6rem;
+    line-height: 150px; }
+    .game .player-wrap .player:nth-child(odd) {
+      margin-right: 30px; }
