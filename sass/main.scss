@@ -113,19 +113,47 @@
     
     .player-wrap {
 
-        .player {
-            display: inline-block;
-            // width: calc( (100% / 2) -15px);
-            width: 450px;
-            height: 150px;
-            border-radius: 12px;
-            box-shadow: 0 0 0 1px $color-secondary;
-            font-size: 6rem;
-            line-height: 150px;
+        // .player {
+        //     display: inline-block;
+        //     // width: calc( (100% / 2) -15px);
+        //     width: 450px;
+        //     height: 150px;
+        //     border-radius: 12px;
+        //     box-shadow: 0 0 0 1px $color-secondary;
+        //     font-size: 6rem;
+        //     line-height: 150px;
 
-            &:nth-child(odd) {
-                //  background-color: $color-light;
-                 margin-right: 30px;
+        //     &:nth-child(odd) {
+        //         //  background-color: $color-light;
+        //          margin-right: 30px;
+        //     }
+        // }
+        .player {
+            &:link,
+            &:visited {
+                display: inline-block;
+                // width: calc( (100% / 2) -15px);
+                width: 450px;
+                height: 150px;
+                border-radius: 12px;
+                box-shadow: 0 0 0 1px $color-secondary;
+                font-size: 6rem;
+                line-height: 150px;
+                text-decoration: none;
+                color: #fff;
+
+                transition: all .6s;
+    
+                &:nth-child(odd) {
+                    //  background-color: $color-light;
+                     margin-right: 30px;
+                }
+            }
+            
+            &:hover,
+            &:visited {
+                background-color: $color-light;
+                
             }
         }
 

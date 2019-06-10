@@ -136,13 +136,18 @@ input[type="range"] {
     .game .wrap .radio-custom:checked ~ .radio-text {
       opacity: 1;
       visibility: visible; }
-  .game .player-wrap .player {
+  .game .player-wrap .player:link, .game .player-wrap .player:visited {
     display: inline-block;
     width: 450px;
     height: 150px;
     border-radius: 12px;
     box-shadow: 0 0 0 1px #801335;
     font-size: 6rem;
-    line-height: 150px; }
-    .game .player-wrap .player:nth-child(odd) {
+    line-height: 150px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .6s; }
+    .game .player-wrap .player:link:nth-child(odd), .game .player-wrap .player:visited:nth-child(odd) {
       margin-right: 30px; }
+  .game .player-wrap .player:hover, .game .player-wrap .player:visited {
+    background-color: #ee4540; }
